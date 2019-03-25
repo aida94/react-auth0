@@ -6,7 +6,7 @@ export default class Main extends Component {
       <div className="Main">
         <h3>Hello {this.props.name}</h3>
         <p>
-          Do you want to open your profile <a href='/secret'>Click here!</a>
+          Do you want to open your profile <a href='/profile'>Click here!</a>
         </p> 
 
         {!this.props.auth.isAuthenticated() &&

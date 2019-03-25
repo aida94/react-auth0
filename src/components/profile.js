@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-export default class Secret extends Component {
+export default class Profile extends Component {
 
   render() {
     return (
-      <div className="Secret">
+      <div className='Profile'>
         {this.props.auth.isAuthenticated() &&
           <div className='my-4'>
             <p>This is your profile:</p>
@@ -14,7 +14,7 @@ export default class Secret extends Component {
               <p> Last Name:<b> {this.props.userData.lastName} </b></p>
               <p> NickName:<b> {this.props.userData.nickName} </b></p>
               <p> Name:<b> {this.props.userData.name} </b></p>
-              <p> Picture: <img style={{width: 100, height: 100}} src={this.props.userData.picture}/> </p>
+              <p> Picture: <img style={{width: 100, height: 100}} src={this.props.userData.picture} alt='profile img'/> </p>
 
             </div>
 
@@ -25,7 +25,7 @@ export default class Secret extends Component {
 
         {!this.props.auth.isAuthenticated() &&
           <div className='my-4'>
-            <p> <b> You Should login first </b> <br/> Go back to <a href='/'>home </a>page</p>
+            <p> <b> You should login first </b> <br/> Go back to <a href='/'>home </a>page</p>
           </div>
         }
 

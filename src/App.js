@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Main from './components/main';
 import Callback from './components/callback';
-import Secret from './components/secret';
+import Profile from './components/profile';
 import NotFound from './components/notFound';
 
 
@@ -16,8 +16,8 @@ class App extends Component {
       case 'callback':
         mainComponent = <Callback/>;
         break; 
-      case 'secret':
-        mainComponent = <Secret {...this.props}/>;
+      case 'profile':
+        mainComponent = <Profile {...this.props}/>;
         break;
       default:
         mainComponent = <NotFound/>   

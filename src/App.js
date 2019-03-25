@@ -17,20 +17,18 @@ class App extends Component {
         mainComponent = <Callback/>;
         break; 
       case 'secret':
-        mainComponent = this.props.auth.isAuthenticated()? <Secret {...this.props}/> : <NotFound/>;
+        mainComponent = <Secret {...this.props}/>;
         break;
       default:
         mainComponent = <NotFound/>   
     }
 
     return (
-      <div className="App">
-        <header className="App-header">
-          <a href='/'><h2>React Oauth</h2></a>
-        </header>
-
+      <div className='container'>
+        <a href='/'>
+          <h2 className='text-center m-4'>React Oauth</h2>
+        </a>
         {mainComponent}
-
       </div>
     );
   }

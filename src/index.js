@@ -14,9 +14,16 @@ window.setState = (changes) => {
     ReactDOM.render(<App {...state} />, document.getElementById('root'));
 }
 
-let username = auth.getProfile().given_name || 'Anonymous';
+let username = auth.getProfile().name || 'Anonymous';
 /* eslint-disable no-restricted-globals */
 let initialState = {
+    userData: {
+        firstName: auth.getProfile().given_name,
+        lastName: auth.getProfile().family_name,
+        nickName: auth.getProfile().nickname,
+        name: auth.getProfile().name,
+        picture: auth.getProfile().picture,
+    },
     name: username,
     location: location.pathname.replace(/^\/?|\/$/g, ""),
     auth,

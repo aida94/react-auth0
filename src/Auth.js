@@ -7,8 +7,8 @@ const LOGIN_FAILURE_PAGE = '/';
 
 export default class Auth {
   auth0 = new auth0.WebAuth({
-    domain: 'dev-aida.auth0.com',
-    clientID: 'm1T4YG3BLIcxGG4uqgq7z1SxwxaX0xec',
+    domain: 'YOUR DOMAIN',
+    clientID: 'YOUR CLIENTID',
     redirectUri: 'http://localhost:3000/callback',
     // audience: 'http://dev-aida.auth0.com/userinfo',
     responseType: 'token id_token',

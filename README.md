@@ -1,8 +1,8 @@
-# react oauth
+# react-auth0
 
 ## Requirements
 
-<b>react oauth</b> is a simple Authentification APP built in React using Auth0 library. You can login with Google, Github or with Username-Password-Authentication
+<b>react-auth0</b> is a simple Authentification APP built in React using Auth0 library. You can login with Google, Github or with Username-Password-Authentication
 
 ## Requirements
 

@@ -26,7 +26,7 @@ class App extends Component {
     return (
       <div className='container'>
         <a href='/'>
-          <h2 className='text-center m-4'>React Oauth</h2>
+          <h2 className='text-center m-4'>React Auth0</h2>
         </a>
         {mainComponent}
       </div>
